@@ -7,7 +7,7 @@ A lightweight proxy that bridges grandMA3 OSC communication to work with standar
 📡 Although OSC 1.1 is *claimed* to be supported, MA3 software **does not implement SLIP framing** for OSC messages over TCP.  
 ⚠️ This causes **incompatibility** with third-party software relying on proper OSC 1.1 framing, and **lacking support for legacy OSC 1.0** framing.
 
-### Bug #2: Dual TCP Connections Required for Bidirectional Communication  
+### Bug #2: Dual TCP Connections Required
 💥 Currently, the **destination IP is mandatory**, forcing users to configure **both a TCP server and client** to avoid system monitor errors.  
 🧩 This is unnecessarily complex, considering **TCP natively supports bidirectional communication** over a single connection.  
 
